@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factura - Cortinas Metálicas HJ</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<section>
+  <div class="invoice">
+    <!-- Información de la Factura -->
+    <div class="invoice_info">
+      <div class="i_row">
+        <!-- Logo -->
+        <div class="i_logo">
+          <img src="logo.png" alt="Logo de la Empresa" width="110">
+        </div>
+        <!-- Título Principal -->
+        <div class="title">
+          <h1>COTIZACIÓN</h1>
+          <h2>CORTINAS METÁLICAS HJ</h2>
+        </div>
+      </div>
+
+      <div class="i_row">
+        <!-- Información de la empresa -->
+        <div class="i_to">
+          <h2 class="main_title">Cortinas Metálicas HJ</h2>
+          <p class="p_title">RUT: 23.935.998-1</p>
+          <p class="p_title">DIRECCIÓN: Buin 972, Cerrillos</p>
+          <p class="p_title">FONO: +56 9 4095 0032</p>
+          <p class="p_title">EMAIL: <a href="mailto:hertorjaque90@gmail.com">hertorjaque90@gmail.com</a></p>
+          <p class="p_title">SITIO WEB: <a href="https://www.cortinasmetalicasjh.cl" target="_blank">www.cortinasmetalicashj.cl</a></p>
+        </div>
+        <!-- Detalles del cliente -->
+        <div class="i_details">
+          <h2 class="main_title">Detalles del Cliente</h2>
+          <p class="p_title">CLIENTE: <span>Juan Pérez</span></p>
+          <p class="p_title">PROYECTO: <span>Instalación Mall Maipú</span></p>
+          <p class="p_title">DIRECCIÓN: <span>Calle Dos</span></p>
+          <p class="p_title">CIUDAD: <span>Santiago</span></p>
+          <p class="p_title">FONO: <span>444555666</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="materials_description">
+      <h2 class="main_title">Descripción de Materiales</h2>
+      <ul>
+        <li>Cañería STM 60 mm diámetro exterior x 3 mm de espesor</li>
+        <li>Tambores galvanizados americanos 200 x 60 mm</li>
+        <li>Resortes americanos templados de 50 mm ancho x 2 mm de espesor</li>
+        <li>Riel acero negro de 50 x 25 x 3 mm de espesor</li>
+        <li>Bandejas de 33 x 33 x 3 mm de espesor</li>
+        <li>Zócalo canal de 90 x 30 x 20 x 3 mm de espesor</li>
+        <li>Láminas HS-80 galvanizada lisas 0.8 mm de espesor</li>
+      </ul>
+    </div>
+
+
+    <!-- Tabla de Productos -->
+    <div class="invoice_table">
+      <div class="i_table">
+        <!-- Encabezado de la Tabla -->
+        <div class="i_table_head">
+          <div class="i_row">
+            <div class="i_col w_15"><p class="p_title">DIMENSIONES</p></div>
+            <div class="i_col w_55"><p class="p_title">DESCRIPCIÓN</p></div>
+            <div class="i_col w_15 text_center"><p class="p_title">CANTIDAD</p></div>
+            <div class="i_col w_15 text_center"><p class="p_title">PRECIO UNITARIO</p></div>
+            <div class="i_col w_15 text_right"><p class="p_title">TOTAL</p></div>
+          </div>
+        </div>
+        <!-- Cuerpo de la Tabla -->
+        <div class="i_table_body">
+          <div class="i_row">
+            <div class="i_col w_15 text_center"><p>3.50 X 3.50</p></div>
+            <div class="i_col w_55">
+              <p>Cortina metálica lamina lisa</p>
+            </div>
+            <div class="i_col w_15 text_center"><p>3</p></div>
+            <div class="i_col w_15 text_center"><p>$100.00</p></div>
+            <div class="i_col w_15 text_right"><p>$300.00</p></div>
+          </div>
+          <!-- Repite más filas según sea necesario -->
+        </div>
+
+        <!-- Totales -->
+        <div class="i_table_foot">
+          <!-- <div class="i_row">
+            <div class="i_col w_50"><p>Neto</p></div>
+            <div class="i_col w_50 text_right"><p>$580.00</p></div>
+          </div> -->
+          <!-- <div class="i_row">
+            <div class="i_col w_50"><p>IVA (19%)</p></div>
+            <div class="i_col w_50 text_right"><p>$580.00</p></div>
+          </div> -->
+          <div class="i_row grand_total_wrap">
+            <div class="i_col w_50"><p>SUMA TOTALES:</p></div>
+            <div class="i_col w_50 text_right"><p>$745.00</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Métodos de Pago -->
+    <div class="invoice_payment">
+      <div class="i_row">
+        <div class="i_payment">
+          <h2 class="main_title">Métodos de Pago</h2>
+          <p class="p_title">Datos Transferencia:</p>
+          <p class="p_title">Héctor Rubén Jaque RUT: <span>23.935.998-1</span></p>
+          <p class="p_title">CTA. CTE Banco BCI: <span>96894148</span></p>
+          <p class="p_title">CTA. CTE Banco Santander: <span>0 000 81 72056 8</span></p>
+        </div>
+        <div class="i_totaldetails text_right">
+          <h2 class="main_title">Detalles del Total</h2>
+          <p class="p_title">Neto: <span>$150.00</span></p>
+          <p class="p_title">IVA (19%): <span>$28.50</span></p>
+          <p class="p_title">Total: <span>$178.50</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Términos y Condiciones -->
+    <div class="invoice_terms">
+      <h2 class="main_title">Términos y Condiciones</h2>
+      <ol>
+        <li>Forma de pago: 50% anticipo y 50% contra entrega.</li>
+        <li>Garantía: 12 meses.</li>
+        <li>Las medidas serán rectificadas en obra, pudiendo variar este presupuesto.</li>
+        <li>Las cortinas, equipos y accesorios son de propiedad de Cortinas Metálicas HJ mientras no se paguen en su totalidad.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

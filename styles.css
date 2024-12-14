@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Redressed&family=Ubuntu:wght@400;700&display=swap");
+
+:root {
+  --bg-clr: #b3b3b3;
+  --white: #fff;
+  --invoice-bg: #e7e7e9;
+  --primary-clr: #2f2929;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background: var(--bg-clr);
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--primary-clr);
+  padding: 0 20px;
+}
+
+.main_title{
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--primary-clr);
+  margin-bottom: 10px;
+}
+
+.p_title {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.p_title > span{
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.text_right {
+  text-align: right;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.i_row{
+  display: flex;
+  align-items: center;
+}
+
+.invoice {
+  width: 800px;
+  max-width: 100%;
+  height: auto;
+  background: var(--white);
+  margin: 20px auto;
+}
+
+.invoice > div{
+  width: 100%;
+  padding: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.invoice .invoice_info .i_row,
+.invoice .invoice_payment .i_row{
+  justify-content: space-between;
+}
+
+.invoice .invoice_info,
+.invoice .invoice_terms,
+.invoice .invoice_payment{
+  background: var(--invoice-bg);
+}
+
+.invoice .invoice_payment{
+  border-bottom: 1px dashed var(--primary-clr);
+}
+
+.invoice .invoice_info > div:not(:last-child){
+  margin-bottom: 10px;
+} 
+
+.invoice .invoice_info h1{
+  font-size: 38px;
+  line-height: 44px;
+  color: var(--primary-clr);
+}
+
+
+
+.invoice .w_15 {
+  width: 15%;
+}
+
+.invoice .w_50 {
+  width: 50%;
+  
+}
+
+.invoice .w_55 {
+  width: 55%;
+  text-align: center;
+}
+
+.invoice .i_table .i_row {
+  padding: 12px 10px; 
+  border: 1px dashed var(--primary-clr); 
+  border-bottom: 0;
+}
+
+.invoice .i_table .i_table_foot .i_row:last-child{
+  border-bottom: 1px dashed var(--primary-clr);  
+}
+
+.invoice .i_table .i_row p{
+  margin: 0;
+  font-weight: 700;
+}
+
+.invoice .i_table .i_table_head .i_row,
+.invoice .i_table .i_table_foot .grand_total_wrap{
+  background: var(--invoice-bg);
+}
+
+.invoice .invoice_right .terms{
+  margin: 0;
+}
+
+
+
+.materials_description {
+  margin-bottom: 20px; /* Espacio debajo de la sección */
+  padding: 20px; /* Espaciado interno */
+  /*background-color: var(--invoice-bg);*/ /* Fondo similar al resto del diseño */
+  border: 1px solid var(--primary-clr); /* Borde opcional */
+}
+
+.materials_description h2 {
+  margin-bottom: 15px; /* Espacio entre el título y la lista */
+}
+
+.materials_description ul {
+  padding-left: 20px; /* Asegura que los elementos de la lista estén indentados */
+  list-style-type: square; /* Estilo de viñeta cuadrada */
+}
+
+.materials_description li {
+  margin-bottom: 2px; /* Espacio entre los elementos de la lista */
+  line-height: 1.5; /* Mejor legibilidad */
+}
+
+
+
+
+
+.i_totaldetails {
+  text-align: right; /* Alineación a la derecha para consistencia */
+  margin-top: 20px; /* Espacio superior */
+}
+
+.i_totaldetails .main_title {
+  margin-bottom: 10px; /* Espacio entre el título y los detalles */
+}
+
+.i_totaldetails .p_title {
+  margin-bottom: 5px; /* Espacio entre las filas */
+  font-weight: 700;
+}
+
+.i_totaldetails .p_title span {
+  font-weight: 400; /* Asegura que los valores tengan un peso menor */
+}
+
+
+
+.i_payment {
+  background: var(--invoice-bg);
+  padding: 20px;
+  border: 1px dashed var(--primary-clr);
+  margin-top: 20px;
+}
+
+.i_payment .main_title {
+  margin-bottom: 10px;
+}
+
+.i_payment .p_title {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.i_payment .p_title span {
+  font-weight: 400;
+}
+
+
+
+
+.invoice_terms {
+  background: var(--invoice-bg);
+  padding: 20px;
+  border: 1px dashed var(--primary-clr);
+  margin-top: 20px;
+}
+
+.invoice_terms .main_title {
+  margin-bottom: 10px;
+}
+
+.invoice_terms ol {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.invoice_terms ol li {
+  margin-bottom: 8px;
+  font-weight: 400;
+  line-height: 1.5;
+}
