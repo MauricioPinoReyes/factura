@@ -19,7 +19,7 @@ body {
   font-size: 12px;
   line-height: 20px;
   color: var(--primary-clr);
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 .main_title{
@@ -54,11 +54,11 @@ body {
 }
 
 .invoice {
-  width: 800px;
+  /* width: 800px; */
   max-width: 100%;
   height: auto;
   background: var(--white);
-  margin: 20px auto;
+  /* margin: 20px auto; */
 }
 
 .invoice > div{
