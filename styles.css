@@ -15,18 +15,21 @@
 }
 
 body {
-  background: var(--bg-clr);
+  /* background: var(--bg-clr); */
   font-size: 12px;
   line-height: 20px;
-  color: var(--primary-clr);
+  /* color: var(--primary-clr); */
+  color: #ffffff;
   /* padding: 0 20px; */
 }
+
 
 .main_title{
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
-  color: var(--primary-clr);
+  /* color: var(--primary-clr); */
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -50,7 +53,7 @@ body {
 
 .i_row{
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .invoice {
@@ -64,8 +67,8 @@ body {
 .invoice > div{
   width: 100%;
   padding: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
 }
 
 .invoice .invoice_info .i_row,
@@ -74,13 +77,17 @@ body {
 }
 
 .invoice .invoice_info,
-.invoice .invoice_terms,
+/* .invoice .invoice_terms, */
 .invoice .invoice_payment{
-  background: var(--invoice-bg);
+  /* background: var(--invoice-bg); */
+  background: #2a2f4a;
+  border-bottom: solid 3px #eed15c;
 }
 
 .invoice .invoice_payment{
-  border-bottom: 1px dashed var(--primary-clr);
+  /* border-bottom: 1px dashed var(--primary-clr); */
+  padding-top: 5px;
+  padding-bottom: 40px;
 }
 
 .invoice .invoice_info > div:not(:last-child){
@@ -90,7 +97,8 @@ body {
 .invoice .invoice_info h1{
   font-size: 38px;
   line-height: 44px;
-  color: var(--primary-clr);
+  /* color: var(--primary-clr); */
+  color: #ffffff;
 }
 
 
@@ -109,14 +117,22 @@ body {
   text-align: center;
 }
 
+.invoice_table{
+  /* background:#4a4a49 ; */
+  background: #2a2f4a;
+  
+}
+
 .invoice .i_table .i_row {
   padding: 12px 10px; 
-  border: 1px dashed var(--primary-clr); 
+  /* border: 1px dashed var(--primary-clr);  */
+  border: 1px solid  #eed15c ;
   border-bottom: 0;
 }
 
 .invoice .i_table .i_table_foot .i_row:last-child{
-  border-bottom: 1px dashed var(--primary-clr);  
+  /* border-bottom: 1px dashed var(--primary-clr); */  
+  border: 1px solid  #eed15c ;
 }
 
 .invoice .i_table .i_row p{
@@ -126,7 +142,9 @@ body {
 
 .invoice .i_table .i_table_head .i_row,
 .invoice .i_table .i_table_foot .grand_total_wrap{
-  background: var(--invoice-bg);
+  /* background: var(--invoice-bg); */
+  /* background: #2a2f4a; */
+  background: #4a4a49;
 }
 
 .invoice .invoice_right .terms{
@@ -136,10 +154,12 @@ body {
 
 
 .materials_description {
-  margin-bottom: 20px; /* Espacio debajo de la sección */
+  /* margin-bottom: 20px; */ /* Espacio debajo de la sección */
   padding: 20px; /* Espaciado interno */
   /*background-color: var(--invoice-bg);*/ /* Fondo similar al resto del diseño */
-  border: 1px solid var(--primary-clr); /* Borde opcional */
+  /* border: 1px solid var(--primary-clr); */ /* Borde opcional */
+  background: #4a4a49;
+  border-bottom: solid 3px #eed15c;
 }
 
 .materials_description h2 {
@@ -181,10 +201,12 @@ body {
 
 
 .i_payment {
-  background: var(--invoice-bg);
+  /* background: var(--invoice-bg); */
+  background: #4a4a49;
   padding: 20px;
-  border: 1px dashed var(--primary-clr);
-  margin-top: 20px;
+  /* border: 1px dashed var(--primary-clr); */
+  border: 1px solid  #eed15c ;
+  /* margin-top: 20px; */
 }
 
 .i_payment .main_title {
@@ -204,10 +226,12 @@ body {
 
 
 .invoice_terms {
-  background: var(--invoice-bg);
-  padding: 20px;
-  border: 1px dashed var(--primary-clr);
-  margin-top: 20px;
+  /* background: var(--invoice-bg); */
+  background: #4a4a49;
+  /* padding: 20px; */
+  /* border: 1px dashed var(--primary-clr); */
+  /* margin-top: 20px; */
+  /* padding-top: 20px; */
 }
 
 .invoice_terms .main_title {
